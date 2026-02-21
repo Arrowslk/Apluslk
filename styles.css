@@ -36,6 +36,8 @@ header{
     z-index: 100;
 }
 .btn{
+   position: relative;
+   z-index: 100;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -76,4 +78,5 @@ body.page-loaded {
 .fade-up.visible {
     opacity: 1;
     transform: translateY(0);
+
 }
