@@ -35,40 +35,24 @@ header{
     align-items: center;
     z-index: 100;
 }
-/* පරණ .btn code එක අයින් කරලා මේක දාන්න */
-.btn {
-    position: relative;
-    z-index: 1001; /* Header එකටත් වඩා උඩින් තැබීමට */
-    display: inline-block;
-    padding: 12px 28px;
-    background: #00a2ff !important; /* පාට ස්ථිර කිරීමට */
-    color: #080808 !important;
-    border-radius: 40px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s ease;
-    cursor: pointer;
-    pointer-events: auto; /* ටච් එක අනිවාර්යයෙන්ම වැඩ කිරීමට */
-    border: 2px solid #00a2ff;
+.btn{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 15px;  
+   padding: 20px;
+   margin: 0 auto;
+   max-width: 30%;
+   background: var(--main-color);
+   border-radius: 3rem;
+   color: var(--bg-color);
+   font-size: 1rem;
+   font-weight: 600;
+   transition: 0.5s ease;
+   margin-top: 30px;
 }
-
-.btn:hover {
-    box-shadow: 0 0 20px #00a2ff;
-    transform: scale(1.05);
-}
-
-/* මොබයිල් එකේදී පෙනුම තවත් නිවැරදි කිරීමට */
-@media (max-width: 768px) {
-    header {
-        padding: 1rem 4%; /* Header එකේ ප්‍රමාණය අඩු කළා */
-    }
-    .home {
-        padding: 0 4%;
-        flex-direction: column; /* Content එක පිළිවෙලට තැබීමට */
-        justify-content: center;
-    }
-}
+.btn:hover{
+    box-shadow: 0 0 20px var(--main-color);
 }
 h1{
     color: white;
@@ -94,4 +78,5 @@ body.page-loaded {
     transform: translateY(0);
 
 }
+
 
