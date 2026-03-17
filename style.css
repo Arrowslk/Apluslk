@@ -244,5 +244,7 @@ body.page-loaded {
     transform: translateY(0);
 }
 
-
+h1 {
+    font-size: large;
+}
 
